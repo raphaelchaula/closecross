@@ -6,6 +6,7 @@ import Container from '@material-ui/core/Container';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 
 // Header components
+import HeaderLeftGroup from './HeaderLeftGroup';
 import HeaderRightGroup from './HeaderRightGroup';
 import HeaderCenterGroup from './HeaderCenterGroup';
 
@@ -33,7 +34,7 @@ const Header: FunctionComponent = () => {
       <Toolbar>
         <Container fixed maxWidth="xl" className={classes.container} >
           <Grid container spacing={0} >
-            <Grid item xs={3} ><div className={classes.paper} ></div></Grid>
+            <Grid item xs={3} ><HeaderLeftGroup/></Grid>
             <Grid item xs={6} ><HeaderCenterGroup/></Grid>
             <Grid item xs={3} ><HeaderRightGroup/></Grid>
           </Grid>

@@ -2,7 +2,6 @@ import React, { FunctionComponent } from 'react';
 import './App.css';
 import Header from './layouts/main/header/index';
 import { i18n } from '@lingui/core';
-import { Trans } from '@lingui/macro';
 import { I18nProvider } from '@lingui/react';
 
 import { messages } from '../src/locales/en/messages.js';

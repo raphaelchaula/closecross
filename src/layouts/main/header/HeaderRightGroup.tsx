@@ -40,6 +40,11 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
+const HRGIcons = new Map<string, ReactChild>();
+HRGIcons.set("search", <Search/>);
+HRGIcons.set("star", <StarOutlineIcon/>);
+HRGIcons.set("graduation", <SchoolOutlinedIcon/>);
+
 const HRGIcon: FunctionComponent = ({ children }) => {
   const classes = useStyles();
   return (
@@ -65,13 +70,17 @@ const HRGAvatar: FunctionComponent<HRGAvatarProps> = ({avatarUrl, notificationsC
 
 const HeaderRightGroup: FunctionComponent = () => {
   const classes = useStyles();
-  const HRGIcons = new Map<string, ReactChild>();
-  HRGIcons.set("search", <Search/>);
-  HRGIcons.set("star", <StarOutlineIcon/>);
-  HRGIcons.set("graduation", <SchoolOutlinedIcon/>);
+
+  const HRGIconsChildren: ReactChild[] = [];
+  HRGIcons.forEach((value, key) => {
+    HRGIconsChildren.push(
+      <HRGIcon key={key} children={value} />
+    );
+  });
+
   return (
     <div className={classes.container} >
-      {["search", "star", "graduation"].map(value => <HRGIcon children={HRGIcons.get(value)} />)}
+      { HRGIconsChildren }
       <HRGAvatar notificationsCount={12} avatarUrl="/avatar.png" />
     </div>
   );
