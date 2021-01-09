@@ -14,12 +14,10 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/layouts/main/header/HeaderCenterGroup.tsx:36
-#: src/layouts/main/header/HeaderLeftGroup.tsx:36
 msgid "Crypto"
 msgstr ""
 
 #: src/layouts/main/header/HeaderCenterGroup.tsx:40
-#: src/layouts/main/header/HeaderLeftGroup.tsx:40
 msgid "Currency"
 msgstr ""
 
@@ -28,21 +26,25 @@ msgstr ""
 #~ msgstr ""
 
 #: src/layouts/main/header/HeaderCenterGroup.tsx:39
-#: src/layouts/main/header/HeaderLeftGroup.tsx:39
 msgid "Index"
 msgstr ""
 
+#: src/layouts/main/header/HeaderLeftGroup.tsx:50
+msgid "Live Mode"
+msgstr ""
+
 #: src/layouts/main/header/HeaderCenterGroup.tsx:35
-#: src/layouts/main/header/HeaderLeftGroup.tsx:35
 msgid "Show All"
 msgstr ""
 
 #: src/layouts/main/header/HeaderCenterGroup.tsx:38
-#: src/layouts/main/header/HeaderLeftGroup.tsx:38
 msgid "Stock"
 msgstr ""
 
+#: src/layouts/main/header/HeaderLeftGroup.tsx:49
+msgid "Training Mode"
+msgstr ""
+
 #: src/layouts/main/header/HeaderCenterGroup.tsx:37
-#: src/layouts/main/header/HeaderLeftGroup.tsx:37
 msgid "Сommodities"
 msgstr ""
