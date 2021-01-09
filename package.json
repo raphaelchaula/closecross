@@ -1,0 +1,80 @@
+{
+  "name": "closecross",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@lingui/react": "^3.3.0",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/dom": "^7.29.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "make-plural": "^6.2.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "typescript": "^4.0.3",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "extract": "lingui extract",
+    "compile": "lingui compile",
+    "lint": "eslint --ext .ts --ext .tsx .",
+    "lint-warn": "eslint --ext .ts --ext .tsx . -c .eslintrc.warn.json"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "shared-config"
+    ],
+    "rules": {
+      "semi": [
+        2,
+        "always"
+      ],
+      "additional-rule": "warn"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.ts?(x)"
+        ],
+        "rules": {
+          "additional-typescript-only-rule": "warn"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@lingui/cli": "^3.3.0",
+    "@lingui/macro": "^3.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "add": "^2.0.6",
+    "babel-plugin-macros": "^2.5.1",
+    "eslint": "^7.17.0"
+  }
+}
