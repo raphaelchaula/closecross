@@ -45,6 +45,26 @@ msgstr "Stock"
 msgid "Training Mode"
 msgstr "Training Mode"
 
+#: src/pages/dahsboard/dashboardleftgroup/TradingHistory.tsx:53
+msgid "all"
+msgstr "all"
+
+#: src/pages/dahsboard/dashboardleftgroup/TradingHistory.tsx:50
+msgid "day"
+msgstr "day"
+
+#: src/pages/dahsboard/dashboardleftgroup/TradingHistory.tsx:49
+msgid "last"
+msgstr "last"
+
+#: src/pages/dahsboard/dashboardleftgroup/TradingHistory.tsx:52
+msgid "month"
+msgstr "month"
+
+#: src/pages/dahsboard/dashboardleftgroup/TradingHistory.tsx:51
+msgid "week"
+msgstr "week"
+
 #: src/layouts/main/header/HeaderCenterGroup.tsx:37
 msgid "Сommodities"
 msgstr "Сommodities"

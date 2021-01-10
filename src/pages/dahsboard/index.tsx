@@ -6,6 +6,7 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 // Dashboard components
 import MainLayout from '../../layouts/main';
 import DashboardLeftGroup from './dashboardleftgroup';
+import DashboardRightGroup from './dashboardrightgroup';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -40,6 +41,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     popoverright: {
       width: "100%",
+      paddingLeft: theme.spacing(4),
       minHeight: "calc(100vh - 60px)",
       backgroundColor: theme.palette.background.paper,
     },
@@ -62,7 +64,9 @@ const DashboardPage: FunctionComponent = () => {
             <Grid item xs={3} className={classes.popoverleft} >
               <DashboardLeftGroup/>
             </Grid>
-            <Grid item xs={9} className={classes.popoverright} ></Grid>
+            <Grid item xs={9} className={classes.popoverright} >
+              <DashboardRightGroup/>
+            </Grid>
           </Grid>
         </Container>
       </div>
