@@ -17,10 +17,11 @@ const maintheme: Theme = createMuiTheme({
     },
     common: {
       black: '#02213B'
-    }
+    },
+    divider: "#272A2D"
   },
   typography: {
-    fontFamily: "'Rubik', sans-serif"
+    fontFamily: "'Roboto', sans-serif"
   }, 
   breakpoints: {
     values: {
@@ -47,7 +48,7 @@ const darktheme: Theme = createMuiTheme({
     background: {
       paper: '#272A2D',
       default: '#181B1C'
-    }
+    },
   }
 });
 

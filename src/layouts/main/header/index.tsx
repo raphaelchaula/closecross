@@ -18,11 +18,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     container: {
       padding: theme.spacing(0)
-    },
-    paper: {
-      width: "100%",
-      height: 36.0,
-      backgroundColor: "red"
     }
   }),
 );
