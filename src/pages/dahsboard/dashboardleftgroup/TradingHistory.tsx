@@ -172,7 +172,7 @@ const THChart: FunctionComponent = () => {
 const DashboardTradingHistory: FunctionComponent = () => {
   const classes = useStyles();
   return (
-    <div className={classes.container} >
+    <div className={classes.container} id="trading-history" >
       <DLGHeader title="Trading History" leadingIcon={<TrendingUpIcon/>} />
       <THButtonGroup/>
       <DLGRow>

@@ -86,7 +86,7 @@ const TWRow: FunctionComponent<TWRowProps> = ({ title, subtitle, buttonLabel, sm
 const DashboardTradingWallet: FunctionComponent = () => {
   const classes = useStyles();
   return (
-    <div className={classes.container} >
+    <div className={classes.container} id="trading-wallet" >
       <DLGHeader title="Training wallet" leadingIcon={<AccountBalanceWalletIcon/>} />
       <TWRow title="Trading" subtitle="$ 34,752.00" buttonLabel="Top up" />
       <TWRow title="Holding" subtitle="$ 4,102.00" buttonLabel="BuY DAI" smallSubtitle buttonOutlined />

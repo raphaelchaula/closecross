@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme: Theme) =>
 const DashboardOpenTrades: FunctionComponent = () => {
   const classes = useStyles();
   return (
-    <div className={classes.container} >
+    <div className={classes.container} id="open-trades" >
       <DLGHeader title="Open Trades" leadingIcon={<TimelineIcon/>} />
       <DLGRow>
         <DLGColumn title="Trades in progress" subtitle="15" />
