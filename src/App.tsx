@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import DashboardPage from './pages/dahsboard';
-
+import './App.css';
 import { i18n } from '@lingui/core';
 import { I18nProvider } from '@lingui/react';
 import { messages } from '../src/locales/en/messages.js';

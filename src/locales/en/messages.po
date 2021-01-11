@@ -21,6 +21,10 @@ msgstr "Crypto"
 msgid "Currency"
 msgstr "Currency"
 
+#: src/pages/dahsboard/dashboardrightgroup/DRGToolbar.tsx:42
+msgid "Filter"
+msgstr "Filter"
+
 #: src/App.tsx:14
 #~ msgid "Hi"
 #~ msgstr "Hi"
@@ -33,9 +37,17 @@ msgstr "Index"
 msgid "Live Mode"
 msgstr "Live Mode"
 
+#: src/pages/dahsboard/dashboardrightgroup/DRGToolbar.tsx:41
+msgid "Select assets, types and period:"
+msgstr "Select assets, types and period:"
+
 #: src/layouts/main/header/HeaderCenterGroup.tsx:35
 msgid "Show All"
 msgstr "Show All"
+
+#: src/pages/dahsboard/dashboardrightgroup/DRGToolbar.tsx:50
+msgid "Sort by"
+msgstr "Sort by"
 
 #: src/layouts/main/header/HeaderCenterGroup.tsx:38
 msgid "Stock"
@@ -44,6 +56,10 @@ msgstr "Stock"
 #: src/layouts/main/header/HeaderLeftGroup.tsx:49
 msgid "Training Mode"
 msgstr "Training Mode"
+
+#: src/pages/dahsboard/dashboardrightgroup/DRGToolbar.tsx:46
+msgid "Units:"
+msgstr "Units:"
 
 #: src/pages/dahsboard/dashboardleftgroup/TradingHistory.tsx:53
 msgid "all"

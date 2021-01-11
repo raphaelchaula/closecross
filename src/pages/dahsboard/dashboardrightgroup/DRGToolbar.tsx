@@ -4,6 +4,10 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import { Trans } from '@lingui/macro';
 
+// Toolbar Components
+import DRGToolbarUnits from './DRGToolbarUnits';
+import DRGToolbarSorts from './DRGToolbarSorts';
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
@@ -47,11 +51,11 @@ const DRGToolbar: FunctionComponent = () => {
       <div className={classes.toolbargroup} >
         <div className={classes.toolbargroup} >
           <Typography className={classes.toolbarlabel} ><Trans>Units:</Trans></Typography>
-          <ButtonBase className={classes.toolbarbutton} ><Trans>Filter</Trans></ButtonBase>
+          <DRGToolbarUnits/>
         </div>
         <div className={classes.toolbargroup} >
-          <Typography className={classes.toolbarlabel} ><Trans>Units:</Trans></Typography>
-          <ButtonBase className={classes.toolbarbutton} ><Trans>Filter</Trans></ButtonBase>
+          <Typography className={classes.toolbarlabel} ><Trans>Sort by</Trans></Typography>
+          <DRGToolbarSorts/>
         </div>
       </div>
     </div>

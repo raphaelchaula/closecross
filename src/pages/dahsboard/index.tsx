@@ -19,8 +19,8 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     backgroundright: {
       width: "100%",
+      backgroundColor: "#1E2122",
       minHeight: "calc(100vh - 64px)",
-      backgroundColor: theme.palette.background.paper,
     },
     popover: {
       top: 0,
@@ -41,9 +41,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     popoverright: {
       width: "100%",
+      backgroundColor: "#1E2122",
       paddingLeft: theme.spacing(4),
-      minHeight: "calc(100vh - 60px)",
-      backgroundColor: theme.palette.background.paper,
+      maxHeight: "calc(100vh - 60px)",
     },
   }),
 );
