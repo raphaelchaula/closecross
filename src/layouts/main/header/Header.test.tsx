@@ -10,7 +10,6 @@ describe('Header', () => {
     expect(images.length).toEqual(2);
     const buttons = screen.getAllByRole('button');
     expect(buttons.length).toEqual(11);
-    console.log(images.length);
     // screen.debug(buttons);
   });
 });
