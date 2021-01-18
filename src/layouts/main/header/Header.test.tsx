@@ -3,9 +3,14 @@ import { render, screen } from '@testing-library/react';
 import LinguiProvider from '../../../LinguiProvider';
 import Header from './index';
 
-describe('App', () => {
-  test('Button exists', () => {
+describe('Header', () => {
+  test('Header must contain 2 images and 11 buttons', () => {
     render(<LinguiProvider><Header/></LinguiProvider>);
-    expect(screen.findByRole("button")).toBeTruthy();
+    const images = screen.getAllByRole('img');
+    expect(images.length).toEqual(2);
+    const buttons = screen.getAllByRole('button');
+    expect(buttons.length).toEqual(11);
+    console.log(images.length);
+    // screen.debug(buttons);
   });
 });

@@ -6,7 +6,7 @@
 .pnp.js
 
 # linting
-.eslintcache
+/.eslintcache
 
 # testing
 /coverage

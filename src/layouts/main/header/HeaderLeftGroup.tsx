@@ -68,6 +68,7 @@ const HCGButton: FunctionComponent<HCGButtonProps> = ({ key, active, index, onCl
   return (
     <ButtonBase
       key={key}
+      data-testid={key}
       onClick={() => onClick()}
       className={clsx(
         classes.button,
